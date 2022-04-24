@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="JS/style/index.css">
 </head>
 <body>
 
@@ -12,21 +13,53 @@
 
 <header>
 <div>
-    <h1> Hr management system </h1>
-    <nav>
+    <section>
+    <h1 class="heading"> Hr management system </h1>
+</section>
+<section>
+    <nav class="navbar">
         <a href="./index.html"> Home </a>
         <a href="./accounting.html"> Accounting </a>
     </nav>
-
+</section>
 </div>
+
 </header>
 
 <main>
-    <script src="./JS/app.js"> </script>
+    <script src="./JS/app.js" defer></script> 
+    <div>
+    <br>
+        <form id="form">
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="department">Choose a department:</label>
+            <select id="department" name="department">
+                <option value="administration">Administration</option>           
+                <option value="marketing">Marketing</option>
+                <option value="development">Development</option>
+                <option value="finance">Finance</option>
+              </select> <br>
+            <label for="level">Choose a level:</label>
+            <select id="level" name="level">
+                <option value="junior">Junior</option>           
+                <option value="midSenior">Mid-Senior</option>
+                <option value="senior">Senior</option>
+              </select> <br>
+            <label for="image">Image:</label>
+            <input type="text" id="image" name="image"><br>
+          </form>
+          <button id="btn" type="submit" form="form" value="Submit">Submit</button>
+    </div>
+    <!-- <br> -->
+    <div  id="card">
+
+    </div> 
+
 </main>
 
 <footer>
-<div>
+<div id="footer">
     &copy; copyright 2022
     <a href=""> Facebook </a>
     <a href=""> Linkdin </a>
