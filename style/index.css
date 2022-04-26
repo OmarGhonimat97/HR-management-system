@@ -60,14 +60,23 @@ header {
             justify-content: space-between;
             bottom:0;
             width:100%;
-            height: 40px;  /* Height of the footer */
+            height: 30px;  /* Height of the footer */
             background:var(--white);
+            
+            
          }
+         /* #body{
+            margin-bottom: 30px; /*(height of your footer)*/   
+          
+       
 body  {
     
     background-color: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 400px;
+    margin-bottom: 30%;
+    clear: both;
    }
    main #form {
     margin: 5%;
